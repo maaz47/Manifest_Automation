@@ -55,7 +55,7 @@ list_df <- cleaning_and_str_commodities(list_df)
 dbWriteTable_output <- FALSE
 con <-  tryCatch(
   dbConnect(
-    odbc(),Driver = "SQL Server",Server = "localhost\\SQLEXPRESS",Database = "cargo",UID = "maaz",PWD = "sql@2018",Port = 1433
+    odbc(),Driver = "SQL Server",Server = db_server,Database = db_name,UID = db_user,PWD = db_pwd,Port = 1433
   ),
   error = function(e) {
     
