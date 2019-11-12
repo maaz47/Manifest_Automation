@@ -23,17 +23,7 @@ library(RDCOMClient)
 
 ################### VARIABLES ###################################################################################
 
-#setwd("~\\Manifest_Automation\\")
-manisfest_path <- "Manifests_Live"
-
-sys_admin_email <- "muhammad.khan@gerrysdnata.com" #use your email when developing
-manifest_sender_email <- "muhammad.khan@gerrysdnata.com" #use your email when developing
-tablename <- "Manifests_Live"
-con_Logs_path <- "DB_LOGS.csv"
-DB_Logs_path <- "Manifest_Compiling_Uploading.log"
-
-sheetname <- NULL
-Pattern <- "FINAL_MANIFEST_" #add a regex 
+source("Config_File.R")
 
 #################################################################################################################
 
