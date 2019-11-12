@@ -1,0 +1,13 @@
+-   There should be only 1 Sheet in the excel file.
+-	The sheet name should be "MNFST"
+-   The cargo manifest should be in 1st sheet of excel file.
+-   The daily cargo Manifest should be checked before sending. Proper Data Entry in Manifest
+-   Avoid using "Consolidation" in commodotity column.
+-	SHC should be identified and entered according to commodity.
+-   Only "/" should be used in pieces columns. No other character should be used.
+-   Valid AWB number is considered as 999-99999999
+-	Ensure that the subject of the email & filename of attachment should be standard.
+		For E.g. FINAL_MANIFEST_EK605_17_10_2019 (Initial Manifest should always be sent with different subject)
+-	Ensure that filename of daily cargo manifest should be standard.
+		For E.g. FINAL_MANIFEST_EK605_17_OCT_2019 (All underscores, No dash No Space)
+-	If there is any correction in final manifest then it should be sent again with the same name.
