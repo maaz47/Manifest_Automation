@@ -111,6 +111,7 @@ cleaning_and_str_commodities <- function(list_df){
               ############LEATHER
               list_df$COMMODITY[list_df$COMMODITY == 'NULL' & grepl("lea.*gar|gar.*lea", list_df$COMMODITY_DESC, ignore.case = TRUE)] <- "LEATHER_GARMENTS"
               list_df$COMMODITY[list_df$COMMODITY == 'NULL' & grepl("lea.*sho|sho.*lea", list_df$COMMODITY_DESC, ignore.case = TRUE)] <- "LEATHER_GARMENTS"
+              list_df$COMMODITY[list_df$COMMODITY == 'NULL' & grepl("lea.*glo|glo.*lea", list_df$COMMODITY_DESC, ignore.case = TRUE)] <- "LEATHER_GARMENTS"
               list_df$COMMODITY[list_df$COMMODITY == 'NULL' & grepl("lea.*jack|jack.*lea", list_df$COMMODITY_DESC, ignore.case = TRUE)] <- "LEATHER_GARMENTS"
               list_df$COMMODITY[list_df$COMMODITY == 'NULL' & grepl("lea.*fin|fin.*lea", list_df$COMMODITY_DESC, ignore.case = TRUE)] <- "LEATHER_FINISHED"
               list_df$COMMODITY[list_df$COMMODITY == 'NULL' & grepl("LEA|LETH", list_df$COMMODITY_DESC, ignore.case = TRUE)] <- "LEATHER"
